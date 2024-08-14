@@ -1,0 +1,10 @@
+environments: SAMPLE_DEV
+databases:
+  - role:
+    - DEV_TEST_2_RW
+    - DEV_TEST_2_R
+    name: TEST_2_DB
+    comment: "This is test db"
+    has_environment_schema: false
+    retention_time: 2
+    is_transient : false

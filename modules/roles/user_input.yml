@@ -1,0 +1,8 @@
+#key to change environment Parameter
+environments: DEV  
+roles:
+  - name: TEST_2_RW
+    comment: "This is a read-write Role"
+
+  - name: TEST_2_R
+    comment: "This is a read only Role"

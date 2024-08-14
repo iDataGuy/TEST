@@ -1,0 +1,52 @@
+environments: SAMPLE_DEV
+
+schema_privileges:
+  - role_category: RW_ROLE
+    database: DB_8
+    schemas:
+      - SCD_1
+      - SCD_2
+    role:
+      - DEV_R_1_RW
+      - DEV_ROL_1_RW
+
+  - role_category: RO_ROLE
+    database: DB_8
+    schemas:
+      - SCD_1
+      - SCD_2
+    role:
+      - DEV_R_1_R
+
+  - role_category: RW_ROLE
+    database: DB_9
+    schemas:
+      - SCD_1
+      - SCD_2
+    role:
+      - DEV_R_1_RW
+      - DEV_ROL_1_RW
+
+  - role_category: RW_ROLE
+    database: TEST_DB
+    schemas:
+      - SCH_1
+      - SCH_2
+    role:
+      - DEV_TEST_RW
+
+  - role_category: RO_ROLE
+    database: TEST_DB
+    schemas:
+      - SCH_1
+      - SCH_2
+    role:
+      - DEV_TEST_R
+
+
+
+role_hierarchy:
+  - parent_role: DEV_ROLE_1_R
+    child_role: DEV_R_1_R
+  - parent_role: DEV_ROLE_1_RW
+    child_role: DEV_R_1_RW

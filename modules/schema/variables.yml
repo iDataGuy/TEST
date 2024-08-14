@@ -1,0 +1,8 @@
+environments: SAMPLE_DEV
+databases:
+  - name: TEST_2_DB
+    schemas:
+      - name: SCH_1
+        comment: "This is schema 2"
+      - name: SCH_2
+        comment: "This is schema 2"

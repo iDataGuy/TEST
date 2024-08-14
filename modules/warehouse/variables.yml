@@ -1,0 +1,15 @@
+environments: DEV
+warehouse:
+
+  - role:
+    - DEV_TEST_2_RW
+    - DEV_TEST_2_R
+    name: TEST_2_WH
+    size: x-small
+    comment : "Test WH 2"
+    max: 2
+    min: 2
+    multi: false
+
+
+
